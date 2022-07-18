@@ -20,5 +20,6 @@ elif BMI >= 40 :
     
 print("This is your BMI: " + str(round(BMI, 2)))
 print("This is considered " + str(message))
+print("NB : This is not a useful tool for athletes")
 
 
