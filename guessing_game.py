@@ -2,8 +2,6 @@
 guess = input("Guess: ")
 number = 9
 no_guess = 0
-i = 0
-while i == 0:
     while no_guess <= 2:
         if no_guess == 2 and int(guess) != number:
             print("You failed, please try again!")
@@ -13,7 +11,5 @@ while i == 0:
         elif int(guess) == number:
             no_guess = 0
             print("You win!")
-            i += 1
-       
-    
-    
+            
+        break
