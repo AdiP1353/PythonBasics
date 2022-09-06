@@ -26,18 +26,22 @@ for line in handle:
     else:
         words = line.split()
         for word in words:
-            if word != "From:":
-                senders.extend(words)
-            else:
-                continue       
-        for word in senders:
             if word == "From:":
-                senders.remove("From:")
+                continue
             else:
                 shen[word] = shen.get(word, 0) + 1
-print(shen) 
+        for value in shen.values():
+            if value < maximum:
+                continue
+            elif value == maximum:
+                continue
+            else:
+                maximum = value
+for key, value in shen.items():
+    if value == maximum:
+        print(f"{key} {value}")
+    else: continue
 
-        
             
 
           
