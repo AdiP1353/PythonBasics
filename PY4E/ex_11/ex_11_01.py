@@ -1,14 +1,19 @@
-from cgitb import text
+
 import re
 
 handle = open("text.txt")
-
+sumlist = []
 for line in handle:
     line = line.rstrip()
     numbers = (re.findall('[0-9]+' ,line))
-    print(numbers)
-    if len(numbers) > 0:
+    if len(numbers) <= 0:
          continue
-    # else:
-    #     banana.extend(numbers)
+    if len(numbers) > 0:
+         for number in numbers:
+              sumlist.append(float(number))
+print(sum(sumlist))
+ 
+          
+
+
         
