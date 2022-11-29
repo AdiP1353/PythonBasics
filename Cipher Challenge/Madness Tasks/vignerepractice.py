@@ -10,7 +10,6 @@ def encryption(plaintext: str, key: str) -> str:
         c = (p + k) % 26
         ciphertext += ALPHABET[c]
     return ciphertext    
-         
 def decryption(ciphertext: str,key: str) -> str:
     ciphertext = ciphertext.upper()
     key = key.upper()
@@ -20,6 +19,10 @@ def decryption(ciphertext: str,key: str) -> str:
         k = ALPHABET.index(key[i%len(key)])
         p = (c - k) % 26
         plaintext += ALPHABET[p]
-    return plaintext
+    return plaintext.lower()
 
-print(decryption("GCYCZFMLYLEIM","ayush"))
+print(decryption("PREGMPHTOLA","idiot"))
+
+
+
+
