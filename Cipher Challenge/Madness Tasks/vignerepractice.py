@@ -11,4 +11,15 @@ def encryption(plaintext: str, key: str) -> str:
         ciphertext += ALPHABET[c]
     return ciphertext    
          
-print(encryption('geeksforgeeks', 'ayush'))
+def decryption(ciphertext: str,key: str) -> str:
+    ciphertext = ciphertext.upper()
+    key = key.upper()
+    plaintext = ''
+    for i in range(len(ciphertext)):
+        c = ALPHABET.index(ciphertext[i])
+        k = ALPHABET.index(key[i%len(key)])
+        p = (c - k) % 26
+        plaintext += ALPHABET[p]
+    return plaintext
+
+print(decryption("GCYCZFMLYLEIM","ayush"))
