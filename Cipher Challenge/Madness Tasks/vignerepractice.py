@@ -21,8 +21,8 @@ def decryption(ciphertext: str,key: str) -> str:
         plaintext += ALPHABET[p]
     return plaintext.lower()
 
-print(decryption("PREGMPHTOLA","idiot"))
+# print(encryption("wherethereisawillthereisaway","mango"))
 
-
+print(decryption("IHRXSFHRXSUSNCWXLGNSDEVYOIAL","mango"))
 
 
