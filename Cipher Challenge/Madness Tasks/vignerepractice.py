@@ -23,6 +23,6 @@ def decryption(ciphertext: str,key: str) -> str:
 
 # print(encryption("wherethereisawillthereisaway","mango"))
 
-print(decryption("IHRXSFHRXSUSNCWXLGNSDEVYOIAL","mango"))
+# print(decryption("IHRXSFHRXSUSNCWXLGNSDEVYOIAL","mango"))
 
 
