@@ -6,7 +6,6 @@ def remove_items(test_list, item):
         test_list.remove(item)
  
     return test_list
-
 def frequency_calculator(filein: str, fileout: str):
     fhand = open(filein,"r").read()
 
