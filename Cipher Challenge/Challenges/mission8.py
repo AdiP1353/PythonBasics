@@ -20,5 +20,5 @@ ciphertext = "OUEVE BEKCO AAFEO ITIBE HIAKU TNOTQ DRHKR ITEIH AEGOJ ARSHN TTEES 
 ciphertext = ciphertext.replace(" ", "")
 
 
-
-print(split_by_index(ciphertext, 41))
+iterator = 7
+newtext = ciphertext.replace(ciphertext,'')
