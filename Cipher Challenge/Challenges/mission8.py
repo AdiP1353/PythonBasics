@@ -52,16 +52,32 @@ def subtract_key_length(input_string: str, sub_num: int) -> str:
     final = ''.join(numbers)
 
     return final
-def ic(self):
-  num = 0.0
-  den = 0.0
-  for val in self.count.val():
-    i = val
-    num += i * (i - 1)
-    den += i
-  if (den == 0.0):
-    return 0.0
-  else:
-    return num / ( den * (den - 1))
+def ioc(input_string: str) -> float:
+    
+    input_string = input_string.lower()
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    count = 0
+    input_string = input_string.replace(' ', '')
+    N = len(input_string)
+    # Transposition cipher or monoalphabetic substitution cipher
+    ic_random_text = 1/26
+
+    # Polyalphabetic cipher (the lower the number, the more alphabets have been used)
+    ic_english_text = 0.0686    
+    
+    # 1/n(n-1)
+    constant = 1/(N * (N - 1))
+    
+    # Frequency of each letter in alphabet in the ciphertext
+    for i in range(len(alphabet)):
+        f = input_string.count(str(alphabet[i]))
+        f = f * (f - 1)
+        count += f
+        
+    # Final IoC calculation
+    final_ioc = constant * count
+    
+    # Return Value (unrounded)
+    return f"IoC: {final_ioc}\n"
 
 
