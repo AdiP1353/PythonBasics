@@ -55,7 +55,7 @@ def subtract_key_length(input_string: str, sub_num: int) -> str:
 def ic(self):
   num = 0.0
   den = 0.0
-  for val in self.count.values():
+  for val in self.count.val():
     i = val
     num += i * (i - 1)
     den += i
