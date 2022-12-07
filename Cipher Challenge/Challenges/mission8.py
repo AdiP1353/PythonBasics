@@ -78,6 +78,6 @@ def ioc(input_string: str) -> float:
     final_ioc = constant * count
     
     # Return Value (unrounded)
-    return f"IoC: {final_ioc}\n"
+    return final_ioc
 
 
