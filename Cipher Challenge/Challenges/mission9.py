@@ -5,5 +5,5 @@ ciphertext = ciphertext.replace(' ', '')
 
 crib = 'abrahamwoodhull'
 
-print())
+print()
 
